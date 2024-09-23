@@ -11,7 +11,6 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-  session: any;
 }>) {
   return (
     <html lang="en">
