@@ -1,0 +1,27 @@
+# locally deploying nextjs with no postgres
+# docker composeup --watch
+# services:
+#   app:
+#     build:
+#       context: .
+#     image: nextjs-docker-demo
+#     ports:
+#       - "3000:3000"
+#     environment:
+#       NODE_ENV: development
+#     develop:
+#       watch:
+#         - action: sync
+#           path: .
+#           target: /app
+#           ignore:
+#             - node_modules/
+#         - action: rebuild
+#           path: package.json
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: Emv0X6lVUfgn
+    ports:
+      - "5432:5432"
