@@ -22,6 +22,6 @@ services:
   db:
     image: postgres:15-alpine
     environment:
-      POSTGRES_PASSWORD: Emv0X6lVUfgn
+      POSTGRES_PASSWORD: example
     ports:
       - "5432:5432"
