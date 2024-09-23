@@ -109,3 +109,17 @@
     ```bash
     npx prisma studio
     ```
+
+---
+## Task 3 : Deploy app on vercel
+### Steps
+1. Follow steps 1 to 11 from **Task 2**.
+
+2. In package.json add this
+```
+"vercel-build":"prisma generate && next build"
+```
+ in scripts
+
+ 3. Deply on vercel and add .env in settings
+
